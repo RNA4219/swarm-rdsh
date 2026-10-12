@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+!.env.sample
+node_modules/
+.runtime/
+lib/gt-dsh/
+dist/
+build/
+artifacts/
+*.local.json
