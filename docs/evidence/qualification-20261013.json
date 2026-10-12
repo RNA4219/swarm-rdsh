@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-13",
+  "scope": "synthetic-public-fixture",
+  "productionQualified": false,
+  "worker": {
+    "outcome": "worker-completed-and-refinery-queue-submitted",
+    "bead": {
+      "id": "df-2kl",
+      "status": "closed",
+      "closedAt": "2026-10-12T14:12:09Z"
+    },
+    "mergeRequest": {
+      "id": "df-wisp-25v",
+      "status": "open",
+      "branch": "polecat/rust/df-2kl+mv5bgour",
+      "target": "main",
+      "commit": "af1af6f2f5ed3342c9979c559707c9ec7b93687c"
+    },
+    "acceptance": {
+      "assertions": 3,
+      "result": "ACCEPTANCE_OK"
+    },
+    "model": {
+      "provider": "deepinfra",
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "endpoint": "https://api.deepinfra.com/v1/openai",
+      "api_key_env": "DEEPINFRA_API_KEY"
+    },
+    "manualRecovery": [
+      "Git info/exclude for managed scaffolding",
+      "Gas Town session stop/start with a fresh DSH Session"
+    ],
+    "sessions": [
+      {
+        "id": "5af27cf5-bf2c-49bb-989a-cfd29fb6e198",
+        "sha256": "f7ea66fa27353125100ad08f4737fa82609da1b69584011bd9e08d20389e10b9",
+        "records": 226,
+        "toolCalls": 43,
+        "primeExecuted": true,
+        "acceptanceExecuted": true,
+        "doneInvoked": true,
+        "selectedCredentialInHistory": false
+      },
+      {
+        "id": "6aacad55-64ff-44e9-a91c-c7ed3462f1a5",
+        "sha256": "799a40b92ee03c51e6c0a54a03fe10ccab0047ccf382163a280df6877d27805b",
+        "records": 46,
+        "toolCalls": 7,
+        "primeExecuted": true,
+        "acceptanceExecuted": true,
+        "doneInvoked": true,
+        "selectedCredentialInHistory": false
+      }
+    ]
+  },
+  "refinery": {
+    "outcome": "refinery-merged-and-verified",
+    "mergeRequest": {
+      "id": "df-wisp-25v",
+      "status": "closed",
+      "closeReason": "merged"
+    },
+    "main": "af1af6f2f5ed3342c9979c559707c9ec7b93687c",
+    "submittedHead": "af1af6f2f5ed3342c9979c559707c9ec7b93687c",
+    "submittedHeadInMain": true,
+    "acceptance": "ACCEPTANCE_OK",
+    "protectedGitHubQualified": false,
+    "sessions": [
+      {
+        "id": "3bca556a-0095-40de-9b9a-653d5787ac55",
+        "records": 73,
+        "toolCalls": 11,
+        "sessionSha256": "5b447cba20b5831e04e04c16cb4a66dd468a1ab646566347081ad70195e0ca87",
+        "prime": true,
+        "acceptance": true,
+        "mainPush": true,
+        "verifiedPostMerge": true,
+        "selectedCredentialInHistory": false
+      }
+    ]
+  },
+  "tuiInjection": {
+    "scope": "synthetic-public-fixture",
+    "transport": "upstream-dsh-tui-inject",
+    "sessionId": "ffc219d0-7a40-4604-b73f-3060e306fe0e",
+    "inputAccepted": true,
+    "responseReceived": true,
+    "sessionSha256": "56ee8c5723938c2f19ecdf609e94d8d8c306b3e2978155adb5e878f93069ce63",
+    "normalGasTownNudgeQualified": false
+  },
+  "upstreamRefineryTests": {
+    "allPassed": true,
+    "testCasesIncludingSubtests": 23,
+    "elapsedSeconds": 11.206
+  },
+  "adapter": {
+    "tests": 20,
+    "failed": 0,
+    "skipped": 0,
+    "elapsedMs": 9311.811609,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed"
+  },
+  "sourceCommits": [
+    {
+      "name": "gastown",
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b"
+    },
+    {
+      "name": "dsh",
+      "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c"
+    },
+    {
+      "name": "rustdsh",
+      "commit": "a1be438e232278add3ee130e7d77aaa02f9f68c5"
+    },
+    {
+      "name": "dsh-tui",
+      "commit": "76c2a26b7f0d81e91b04c848e8aa9671f93ed046"
+    }
+  ],
+  "remaining": [
+    "formal-dsh-tui-compatibility",
+    "private-privacy-canary",
+    "normal-gastown-nudge",
+    "automatic-recovery",
+    "protected-refinery-PR",
+    "all-role-model-tiers",
+    "DAG-and-concurrent-dispatch-E2E",
+    "load-16-and-100",
+    "portable-TUI-package"
+  ]
+}

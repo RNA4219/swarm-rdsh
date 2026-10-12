@@ -1,0 +1,168 @@
+{
+  "schema": "deepflow.upstream-lock/v2.1",
+  "kind": "design-candidate-not-deployment",
+  "status": "blocked",
+  "date": "2026-10-12",
+  "source_candidates": [
+    {
+      "name": "gastown",
+      "repository": "gastownhall/gastown",
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "artifact_sha256": null
+    },
+    {
+      "name": "dsh",
+      "repository": "deepseek-ai/deepseek-harness",
+      "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+      "artifact_sha256": null
+    },
+    {
+      "name": "rustdsh",
+      "repository": "jimoto-no-llm/rustdsh",
+      "commit": "a1be438e232278add3ee130e7d77aaa02f9f68c5",
+      "source_evidence": "carried-from-v2.0-not-rebuilt-this-review",
+      "artifact_sha256": null
+    },
+    {
+      "name": "dsh-tui",
+      "repository": "ccch1mneyyy/dsh-TUI",
+      "commit": "76c2a26b7f0d81e91b04c848e8aa9671f93ed046",
+      "manifest_version": "0.14.0",
+      "package_manager_manifest": "pnpm@11.21.0",
+      "npm_source_equivalence": "unverified",
+      "artifact_sha256": null
+    }
+  ],
+  "required_unresolved": [
+    {
+      "name": "external-beads-cli",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "dolt",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "node",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "pnpm-build-environment",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "tmux",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "git",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "os-image-architecture-libc",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "go-builder-if-source-build",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "tui-transitive-lock-and-native-assets",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "recursive-vendor-submodules",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "gt-dsh-adapter",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "effective-worker-profile",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "trusted-acceptance-lock",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "resolved-formula",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "role-env-allowlist",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    },
+    {
+      "name": "model-route-configuration",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "must-resolve-before-deployment"
+    }
+  ],
+  "local_design_files": {
+    "DESIGN_V2_1.md": {
+      "sha256": "11bec12074be96a1945e50e6daa6644fbbc816b506cd5c1dec79d6adf2949e9a"
+    },
+    "ACCEPTANCE_V2_1.md": {
+      "sha256": "d868c64a20284390947c270fc376b3ff79701924fb829dd24dbfaab6aaa99011"
+    },
+    "worker-profile.policy.json": {
+      "sha256": "4883565a29d59c336d7d6d16b9ec04cf982b64b3fa41b6870fe67a6b09aa0da4"
+    },
+    "privacy.override.cordis.yml": {
+      "sha256": "8b6bdf7ec7437b42b2801d8dac95275af2efcf4869ecb5813b08f725bd1e1663"
+    }
+  },
+  "feature_policy": {
+    "refinery_bisect": "not-adopted",
+    "cross_worktree_session_resume": false,
+    "initial_dsh_delegation": false,
+    "automatic_merge": "disabled-until-protected-pr-acceptance-e2e-passes"
+  },
+  "qualification": {
+    "restore_test": "not-run",
+    "build": "not-run",
+    "pty_e2e": "not-run",
+    "service_e2e": "not-run",
+    "load_16": "not-run",
+    "load_100": "not-run"
+  },
+  "review_workspace": {
+    "uncommitted_file_count_reported": 8,
+    "locally_observed": false,
+    "backup_executed": false
+  },
+  "unresolved_action": "reject-deployment"
+}

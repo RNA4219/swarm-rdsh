@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "profile": "deepflow-worker-v2_1",
+  "runtime": {
+    "rdsh_bin": null,
+    "dsh_bin": null,
+    "dsh_home": null,
+    "worker_home": null,
+    "deployment_lock": null,
+    "path": []
+  },
+  "model": { "provider": null, "id": null, "endpoint": null, "api_key_env": null }
+}

@@ -1,0 +1,9 @@
+# セキュリティに関する連絡と範囲
+
+APIキーや秘密をGitHub Issue・PR・ログへ貼り付けないでください。このrepositoryで選択キーの混入を検出した場合は公開・mergeを止め、対象のキーを失効・再発行してから扱います。履歴から値を消すだけでは失効の代わりになりません。
+
+報告はGitHubのprivate vulnerability reportingを使用できる場合、[Security](https://github.com/RNA4219/swarm-rdsh/security)から送ってください。利用できない場合は、公開Issueには影響の概要だけを記載し、secretや再現用credentialを含めないでください。
+
+現在のworker profileは公開の合成fixtureで接続を検証した実験版です。private repositoryのread/network境界と全lifecycle通信は未資格です。通常deployment lockをblockedのまま維持しています。fixture-only設定をprivate repositoryへ流用しないでください。
+
+env fileのignoreはcommit・配布への混入を防ぐための設定です。モデル実行時のfilesystem/network制限とは別の性質です。secret除外検査の範囲とrelease手順は[docs/RELEASE.md](docs/RELEASE.md)を参照してください。

@@ -1,0 +1,71 @@
+{
+  "schema": "deepflow.worker-profile.design/v2.1",
+  "kind": "declarative-policy-not-installable-profile",
+  "profile": "deepflow-worker-v2_1",
+  "runtime_status": "unbuilt-unverified",
+  "composition_order": [
+    "dsh-base@fixed-source",
+    "dsh-tui@fixed-source",
+    "worker-profile",
+    "final-privacy-policy-override"
+  ],
+  "dsh_commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+  "tui": {
+    "repository": "ccch1mneyyy/dsh-TUI",
+    "commit": "76c2a26b7f0d81e91b04c848e8aa9671f93ed046",
+    "manifest_version": "0.14.0",
+    "backend": "dsh",
+    "other_backends_allowed": false,
+    "auto_update_allowed": false,
+    "version_check_egress_allowed": false,
+    "upstreamRetry": false,
+    "shared_home_allowed": false
+  },
+  "home_policy": {
+    "HOME": "attempt-specific",
+    "DSH_HOME": "attempt-specific",
+    "tui_saved_state": "validate-and-isolate",
+    "inherited_profile_allowed": false
+  },
+  "model": {
+    "provider": null,
+    "model": null,
+    "endpoint": null,
+    "unresolved_action": "reject-launch",
+    "local_private_cloud_fallback": false
+  },
+  "delegation": {
+    "workflow": false,
+    "subagent": false,
+    "agent_teams": false,
+    "scope": "initial-qualified-profile",
+    "must_check_effective_tools": true
+  },
+  "privacy": {
+    "deepseek_session_log": false,
+    "otel_delivery": false,
+    "package_inventory": false,
+    "host_env_inheritance": false,
+    "project_dotenv_inheritance": false,
+    "raw_logs_external": false,
+    "read_allowlist_must_be_enforced": true,
+    "network_allowlist_must_be_enforced": true
+  },
+  "resume": {
+    "strategy": "new-worktree-new-session-with-handoff",
+    "cross_worktree_resume": false,
+    "same_worktree_resume": "not-qualified-in-v2.1"
+  },
+  "readiness": [
+    "process_alive",
+    "input_accepted_in_target_session",
+    "gt_prime_tool_receipt_with_matching_assignment",
+    "effective_policy_valid"
+  ],
+  "qualification": {
+    "requires_deployment_lock": true,
+    "requires_profile_composition_test": true,
+    "requires_pty_contract_test": true,
+    "requires_privacy_canary_test": true
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "schema": "deepflow.upstream-lock/v2.1",
+  "kind": "design-candidate-not-deployment",
+  "status": "blocked",
+  "date": "2026-10-12",
+  "source_candidates": [
+    {
+      "name": "gastown",
+      "repository": "gastownhall/gastown",
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "artifact_sha256": "322e78e1089dbf6077d9979efc39fc4f4dfba38496f109cacb8ae53af3138966",
+      "artifact_kind": "linux-x64-executable"
+    },
+    {
+      "name": "dsh",
+      "repository": "deepseek-ai/deepseek-harness",
+      "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+      "artifact_sha256": "f9f0f13209aaeb586712b52c0f4b84072db9b21ccce77984a5e8fb52dd553362",
+      "artifact_kind": "built-source-cli-entrypoint-not-portable-bundle"
+    },
+    {
+      "name": "rustdsh",
+      "repository": "jimoto-no-llm/rustdsh",
+      "commit": "a1be438e232278add3ee130e7d77aaa02f9f68c5",
+      "source_evidence": "fixed-source-built-and-executed-public-fixture",
+      "artifact_sha256": "17e8743a87ad45466caf18de60733190905976e74a68adcd8e20703d3fe14697",
+      "artifact_kind": "linux-x64-executable"
+    },
+    {
+      "name": "dsh-tui",
+      "repository": "ccch1mneyyy/dsh-TUI",
+      "commit": "76c2a26b7f0d81e91b04c848e8aa9671f93ed046",
+      "manifest_version": "0.14.0",
+      "package_manager_manifest": "pnpm@11.21.0",
+      "npm_source_equivalence": "unverified",
+      "artifact_sha256": null,
+      "source_evidence": "fixed-source-vendor-built-and-executed-public-fixture",
+      "portable_package_status": "not-qualified",
+      "vendor": {
+        "vendor/dsh-std": "614dfa1ac168db79fcf4577cf0ebb34e2e3b944b"
+      }
+    }
+  ],
+  "required_unresolved": [
+    {
+      "name": "os-image-architecture-libc",
+      "version": "Ubuntu 24.04/linux-x64/glibc 2.39",
+      "artifact_sha256": null,
+      "status": "image-digest-and-portable-deployment-not-qualified"
+    },
+    {
+      "name": "tui-transitive-lock-and-native-assets",
+      "version": "0.14.0",
+      "artifact_sha256": null,
+      "status": "build-lock-and-native-assets-recorded-portable-pack-and-license-inventory-pending"
+    },
+    {
+      "name": "effective-worker-profile",
+      "version": "deepflow-worker-v2_1",
+      "artifact_sha256": null,
+      "status": "public-fixture-passed-private-canary-and-live-tool-inventory-pending"
+    },
+    {
+      "name": "trusted-acceptance-lock",
+      "version": "fixture-3-assertions",
+      "artifact_sha256": null,
+      "status": "production-protected-acceptance-not-qualified"
+    },
+    {
+      "name": "resolved-formula",
+      "version": null,
+      "artifact_sha256": null,
+      "status": "raw-bead-only-molecule-contract-not-qualified"
+    },
+    {
+      "name": "role-env-allowlist",
+      "version": "public-polecat",
+      "artifact_sha256": null,
+      "status": "worker-tested-all-control-roles-pending"
+    },
+    {
+      "name": "model-route-configuration",
+      "version": "deepinfra",
+      "artifact_sha256": null,
+      "status": "lower-worker-tested-head-and-medium-job-pending"
+    },
+    {
+      "name": "formal-dsh-tui-compatibility",
+      "status": "not-qualified"
+    },
+    {
+      "name": "nudge-terminal-contract",
+      "status": "not-qualified"
+    },
+    {
+      "name": "automatic-recovery",
+      "status": "not-qualified"
+    },
+    {
+      "name": "refinery-protected-merge",
+      "status": "not-qualified"
+    },
+    {
+      "name": "private-privacy-canary",
+      "status": "not-qualified"
+    }
+  ],
+  "local_design_files": {
+    "docs/design-v2.1/DESIGN_V2_1.md": {
+      "sha256": "11bec12074be96a1945e50e6daa6644fbbc816b506cd5c1dec79d6adf2949e9a"
+    },
+    "docs/design-v2.1/ACCEPTANCE_V2_1.md": {
+      "sha256": "d868c64a20284390947c270fc376b3ff79701924fb829dd24dbfaab6aaa99011"
+    },
+    "docs/design-v2.1/worker-profile.policy.json": {
+      "sha256": "4883565a29d59c336d7d6d16b9ec04cf982b64b3fa41b6870fe67a6b09aa0da4"
+    },
+    "docs/design-v2.1/privacy.override.cordis.yml": {
+      "sha256": "8b6bdf7ec7437b42b2801d8dac95275af2efcf4869ecb5813b08f725bd1e1663"
+    }
+  },
+  "feature_policy": {
+    "refinery_bisect": "not-adopted",
+    "cross_worktree_session_resume": false,
+    "initial_dsh_delegation": false,
+    "automatic_merge": "disabled-until-protected-pr-acceptance-e2e-passes"
+  },
+  "qualification": {
+    "restore_test": "passed",
+    "build": "passed-fixed-source-builds",
+    "profile_composition": "passed-public-fixture",
+    "pty_e2e": "passed-public-fixture-with-manual-recovery",
+    "service_e2e": "worker-and-refinery-public-fixture-with-manual-recovery",
+    "privacy_canary": "not-run",
+    "nudge_terminal": "failed",
+    "automatic_recovery": "not-run",
+    "refinery_merge": "passed-public-fixture-standard-agent-and-mq",
+    "load_16": "not-run",
+    "load_100": "not-run",
+    "tui_injection": "passed-public-fixture-short-sandbox-home"
+  },
+  "review_workspace": {
+    "uncommitted_file_count_reported": 8,
+    "locally_observed": true,
+    "backup_executed": true
+  },
+  "unresolved_action": "reject-deployment",
+  "implementation_status": "real-public-fixture-worker-completed-with-manual-recovery",
+  "prepared_environment": {
+    "node": {
+      "version": "24.15.0",
+      "platform": "linux-x64",
+      "path": "/home/ryo-n/.local/share/deepflow-swarm/node-v24.15.0-linux-x64/bin/node",
+      "archive_sha256": "472655581fb851559730c48763e0c9d3bc25975c59d518003fc0849d3e4ba0f6",
+      "binary_sha256": "d1de76d8edf2fededf6f8b30d244e2c0529ac607923a018283b77e9c74bd932c",
+      "source": "https://nodejs.org/dist/v24.15.0/node-v24.15.0-linux-x64.tar.xz",
+      "globalPathChanged": false
+    },
+    "runtime_artifacts": {
+      "node": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/node-v24.15.0-linux-x64/bin/node",
+        "sha256": "d1de76d8edf2fededf6f8b30d244e2c0529ac607923a018283b77e9c74bd932c",
+        "version": "24.15.0"
+      },
+      "dsh": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/bin/dsh",
+        "sha256": "f9f0f13209aaeb586712b52c0f4b84072db9b21ccce77984a5e8fb52dd553362"
+      },
+      "rdsh": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/bin/rdsh",
+        "sha256": "17e8743a87ad45466caf18de60733190905976e74a68adcd8e20703d3fe14697"
+      },
+      "gt": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/bin/gt",
+        "sha256": "322e78e1089dbf6077d9979efc39fc4f4dfba38496f109cacb8ae53af3138966"
+      },
+      "bd": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/bin/bd",
+        "sha256": "d7d6f3b842941697a91317ddbbab6c659a36d00c1c2315e797bfc072d30c6666",
+        "version": "1.0.5",
+        "commit": "6a3f515ced18406c189c55fff789a4925bfaa35c"
+      },
+      "dolt": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/bin/dolt",
+        "sha256": "46da8c16a68dc9b94e8893ad3e99ed91398c28d365f312a32727279b83329dd7"
+      },
+      "bwrap": {
+        "path": "/usr/bin/bwrap",
+        "sha256": "e318903862396f96de3df57264e0158682b952fd3fb53ac23d876413e7b30f71"
+      },
+      "git": {
+        "path": "/usr/bin/git",
+        "sha256": "2a8c18fbf43da9f692d75474c72bea9dfd796c260b0f3dfe456376abc3bbd668"
+      },
+      "tmux": {
+        "path": "/usr/bin/tmux",
+        "sha256": "034b15c64035f783d43862f2775eb4828f61571ca62c8199796000b97d556ecd"
+      },
+      "go": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/toolchains/go1.26.2/bin/go",
+        "sha256": "1a0f01bdb35c622c78bdc49f26f85dda53f9d7955f453f63c4c023b0dc7c754d"
+      },
+      "rustc": {
+        "path": "/home/ryo-n/.local/share/deepflow-swarm/toolchains/rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin/rustc",
+        "sha256": "bff349e72704ff70bc08a234a3847338e797065bbedde5e556808bc87b7bf7c6"
+      }
+    },
+    "source_lock_sha256": {
+      "dsh": "b45f8695fb0dca90d3ed07afc766e923356539962706ee36ac8cdb396e6d734d",
+      "tui": "df1c80b2dd756bc634e10fb38f92a84f4b9c0fbeb097834fb7f2d86c691be203",
+      "rustdsh": "8f18571383ce8d3dffe7cda23c4473b371750b03781e702f6677b859ed4f3f91"
+    },
+    "native_asset_sha256": {
+      "landlock-run": "a752bc72f111fcc573c3e61fb90fa544541dac0ca498d2e279e1630d7c659b31",
+      "glibc/system.node": "54a9c25c05186c17520f6b7a5ced5f005752c08044c3eb76524cd517287600bc",
+      "musl/system.node": "fb39a23ed7c414b48d6a8ee35b02016400997b0eb15926b1fd53946c7403f1d2"
+    },
+    "builders": {
+      "go": {
+        "version": "1.26.2",
+        "archive_sha256": "990e6b4bbba816dc3ee129eaeaf4b42f17c2800b88a2166c265ac1a200262282"
+      },
+      "rust": {
+        "version": "1.95.0",
+        "method": "isolated-rustup-fixed-toolchain"
+      },
+      "pnpm": {
+        "adapter": "10.20.0",
+        "dsh": "11.28.5",
+        "tui": "11.21.0"
+      }
+    },
+    "os": {
+      "distro": "Ubuntu 24.04",
+      "platform": "linux-x64",
+      "wsl_kernel": "6.6.87.2",
+      "libc": "glibc 2.39",
+      "git": "2.43.0",
+      "tmux": "3.4",
+      "image_digest": null
+    },
+    "dolt_release": {
+      "version": "2.0.7",
+      "archive_sha256": "8e09138596763896cbce0632cd6e779fa1df405334c6c148bc314539a3b9795a"
+    },
+    "adapter": {
+      "version": "0.2.1-dev.0",
+      "files_sha256": {
+        "lib/gt-dsh/adapter.js": "f06f79c3954bb6fc3e898d470a0955de87f778c11c42cb2ddbb8304b78887460",
+        "lib/gt-dsh/cli.js": "c18a8234e06566a5218d45050276ac4a031d54b0f442147dfaf3989533cec81e",
+        "adapters/gt-dsh/bin/gt-dsh.mjs": "e0bd5039e18b5c6920dfec7ad56d5c4f7e2ab7b5a493276a5f8318b069adc3ed"
+      }
+    },
+    "public_fixture_profile": {
+      "name": "deepflow-worker-v2_1",
+      "files_sha256": {
+        "profiles/deepflow-worker-v2_1/package.json": "2309330aad263c37e0022477c5b3bfe549835b7987c7803e45814cd403d7a66b",
+        "profiles/deepflow-worker-v2_1/cordis.patch.yml": "ae3e20b8f0d7132c72303b7f37fc439ee21714e2139eafbfbfc467705cacf1f3",
+        "cordis.patch.yml": "47fe2e4183cfca5eb46f08f9d3446ea8ae5da353030486d799a51e82e95d37bb",
+        "fixture-only.patch.yml": "ea6dd4e28660efd308a739a19e170fe493af6d95db6dae5c5ebe327c91a248f7",
+        "profiles/deepflow-worker-v2_1/compatibility.json": "eec9e1b30730948bae57a60fca0009655fe19518025885a3c943fc6343b36ba0"
+      },
+      "dsh_home": "/home/ryo-n/.local/share/deepflow-swarm/qualification-20261012/attempts/6/dsh-home",
+      "exact_version_exemption": true,
+      "production_qualified": false
+    }
+  },
+  "adapter_verification": {
+    "linux_tests": 20,
+    "linux_failed": 0,
+    "linux_skipped": 0,
+    "duration_ms": 9311.811609,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "real_dsh_tui": "worker-and-refinery-public-fixture",
+    "model_calls": "real-calls-recorded-in-dsh-session-evidence",
+    "evidence": "docs/REAL_E2E.md"
+  },
+  "real_e2e": {
+    "scope": "synthetic-public-fixture",
+    "outcome": "worker-completed-and-refinery-queue-submitted",
+    "bead": {
+      "id": "df-2kl",
+      "status": "closed",
+      "closedAt": "2026-10-12T14:12:09Z"
+    },
+    "mergeRequest": {
+      "id": "df-wisp-25v",
+      "status": "open",
+      "branch": "polecat/rust/df-2kl+mv5bgour",
+      "target": "main",
+      "commit": "af1af6f2f5ed3342c9979c559707c9ec7b93687c"
+    },
+    "acceptance": {
+      "assertions": 3,
+      "result": "ACCEPTANCE_OK"
+    },
+    "model": {
+      "provider": "deepinfra",
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "endpoint": "https://api.deepinfra.com/v1/openai",
+      "api_key_env": "DEEPINFRA_API_KEY"
+    },
+    "base": "4a59ff06f9f0d21394a5f435bd258bf0386bcbdc",
+    "main": "4a59ff06f9f0d21394a5f435bd258bf0386bcbdc",
+    "main_changed": false,
+    "integration_merged": false,
+    "manual_recovery": [
+      "Git info/exclude for managed scaffolding",
+      "Gas Town session stop/start with a fresh DSH Session"
+    ],
+    "production_qualified": false,
+    "machine_evidence_sha256": "4d9bb85bd0b9cb8bd4b75370593332bc8fbe235943a877ceb78903dc86dc37c9",
+    "local_machine_evidence": ".runtime/REAL_E2E.json",
+    "evidence": "docs/REAL_E2E.md"
+  },
+  "refinery_e2e": {
+    "outcome": "refinery-merged-and-verified",
+    "mergeRequest": {
+      "id": "df-wisp-25v",
+      "status": "closed",
+      "closeReason": "merged"
+    },
+    "main": "af1af6f2f5ed3342c9979c559707c9ec7b93687c",
+    "submittedHead": "af1af6f2f5ed3342c9979c559707c9ec7b93687c",
+    "submittedHeadInMain": true,
+    "acceptance": "ACCEPTANCE_OK",
+    "protectedGitHubQualified": false,
+    "sessions": [
+      {
+        "id": "3bca556a-0095-40de-9b9a-653d5787ac55",
+        "records": 73,
+        "toolCalls": 11,
+        "sessionSha256": "5b447cba20b5831e04e04c16cb4a66dd468a1ab646566347081ad70195e0ca87",
+        "prime": true,
+        "acceptance": true,
+        "mainPush": true,
+        "verifiedPostMerge": true,
+        "selectedCredentialInHistory": false
+      }
+    ]
+  },
+  "public_qualification_evidence": {
+    "path": "docs/evidence/qualification-20261013.json",
+    "sha256": "53a0d3179553872395c006eb11087efd8383c6ba9edd0a93e46c778b60c7251c"
+  }
+}

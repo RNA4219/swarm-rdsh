@@ -1,0 +1,11 @@
+node_modules/
+.runtime/
+src/
+tests/
+tools/
+docs/legacy/
+**/.env
+**/.env.*
+**/.credentials*
+**/*.local.json
+**/artifacts/

@@ -1,0 +1,125 @@
+# Gas Town worker専用。推論・tool実行はすべて既存DSHが担当する。
+- id: llm-pi-ai
+  config:
+    providers: !!js >-
+      ({ [process.env.DEEPFLOW_MODEL_PROVIDER]: {
+        displayName: 'DeepFlow fixed route',
+        apiKeyEnv: 'DEEPINFRA_API_KEY',
+        api: 'openai-completions',
+        baseURL: process.env.DEEPFLOW_MODEL_ENDPOINT,
+        compat: { thinkingFormat: 'deepseek' },
+        retryPolicy: { mode: 'normal', maxRetries: 0 },
+        models: [{ id: process.env.DEEPFLOW_MODEL_ID, contextWindow: 131072, maxTokens: 8192 }]
+      } })
+- id: llm-deepseek
+  disabled: true
+- id: llm-deepseek-account
+  disabled: true
+- id: deepseek-account
+  disabled: true
+- id: credentials
+  disabled: true
+- id: authorization
+  disabled: true
+- id: dsh-tui-auth
+  disabled: true
+- id: dsh-tui-webserver
+  disabled: true
+- id: dsh-tui-cordis-host-runner
+  disabled: true
+- id: session-log-deepseek
+  disabled: true
+  config:
+    enabled: false
+- id: session-telemetry-otel
+  disabled: true
+- id: plugin-package-inventory-deepseek
+  disabled: true
+  config:
+    enabled: false
+- id: session-title-llm
+  disabled: true
+- id: hmr
+  disabled: true
+- id: tool-plugin-manager
+  disabled: true
+- id: subagent
+  disabled: true
+- id: subagent-spawn-in-process
+  disabled: true
+- id: subagent-fork-in-process
+  disabled: true
+- id: tool-subagent-control
+  disabled: true
+- id: tool-subagent-list-agents
+  disabled: true
+- id: tool-subagent
+  disabled: true
+- id: tool-subagent-fork
+  disabled: true
+- id: workflow-ptc
+  disabled: true
+- id: tool-workflow
+  disabled: true
+- id: dsh-tui-subagent-model-selection-settings
+  disabled: true
+- id: dsh-tui-agent-preset-registry
+  config:
+    default: deepflow-worker
+- insert:
+    # TUIの自動preset追加を既存の宣言で止める。worker以外はtoolを持たない。
+    - id: preset-disabled-standard
+      name: '@deepseek-ai/dsh-agent-preset'
+      config: { id: standard, name: Disabled standard, plugins: [] }
+    - id: preset-disabled-ptc
+      name: '@deepseek-ai/dsh-agent-preset'
+      config: { id: ptc, name: Disabled ptc, plugins: [] }
+    - id: preset-disabled-minimal
+      name: '@deepseek-ai/dsh-agent-preset'
+      config: { id: minimal, name: Disabled minimal, plugins: [] }
+    - id: preset-disabled-cordis
+      name: '@deepseek-ai/dsh-agent-preset'
+      config: { id: cordis, name: Disabled cordis, plugins: [] }
+    - id: preset-disabled-liangshen
+      name: '@deepseek-ai/dsh-agent-preset'
+      config: { id: liangshen, name: Disabled liangshen, plugins: [] }
+    - id: preset-deepflow-worker
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: deepflow-worker
+        name: Gas Town worker
+        description: Gas Town割当を実行する単一worker。仕事の所有権はBeads。
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                You are a Gas Town worker. Run gt prime when instructed, read your hook,
+                implement only the assigned bead, run acceptance checks, commit the change
+                on your worker branch, then use gt done. Gas Town owns assignment and completion.
+                Do not delegate, schedule jobs, change models, inspect credentials, or merge main.
+          - id: agent-instructions
+            name: '@deepseek-ai/dsh-agent-instructions'
+            config:
+              maxBytes: 65536
+          - id: tool-bash
+            name: '@deepseek-ai/dsh-tool-bash'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+          - id: tool-fs-search
+            name: '@deepseek-ai/dsh-tool-fs-search'
+            config:
+              sampleOverCapGlobResults: false
+- id: dsh-tui
+  config:
+    backend: dsh
+    provider: !!js process.env.DEEPFLOW_MODEL_PROVIDER
+    model: !!js process.env.DEEPFLOW_MODEL_ID
+    preset: deepflow-worker
+    effort: off
+    launchpad: false
+    minimal: true
+    activity: false
+    fullscreen: false
+    terminalImages: false
+    upstreamRetry: false

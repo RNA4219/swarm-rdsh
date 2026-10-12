@@ -1,0 +1,6 @@
+{
+  "type": "town-settings",
+  "version": 1,
+  "default_agent": "dsh-worker",
+  "scheduler": { "max_polecats": 1 }
+}

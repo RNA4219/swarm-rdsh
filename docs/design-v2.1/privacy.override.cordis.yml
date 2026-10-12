@@ -1,0 +1,24 @@
+# 固定DSHで行IDの存在を確認した無効化候補。起動試験未実施。
+# 完成したworker profileではない。TUI/preset内のtool登録は別途検査する。
+# 必ず最後のpatchとして適用し、unknown-target等の警告を成功扱いにしない。
+- id: session-log-deepseek
+  disabled: true
+  config:
+    enabled: false
+
+- id: session-telemetry-otel
+  disabled: true
+
+- id: plugin-package-inventory-deepseek
+  disabled: true
+  config:
+    enabled: false
+
+- id: session-title-llm
+  disabled: true
+
+- id: hmr
+  disabled: true
+
+- id: tool-plugin-manager
+  disabled: true

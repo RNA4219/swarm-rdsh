@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "agents": {
+    "dsh-worker": {
+      "name": "dsh-worker",
+      "command": "gt-dsh",
+      "args": [],
+      "prompt_mode": "arg",
+      "supports_hooks": false,
+      "hooks_informational": true,
+      "process_names": ["node", "MainThread", "rdsh"],
+      "instructions_file": "AGENTS.md",
+      "ready_delay_ms": 5000,
+      "escape_cancels_request": false
+    }
+  }
+}

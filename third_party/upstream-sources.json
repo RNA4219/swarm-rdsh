@@ -1,0 +1,79 @@
+[
+  {
+    "project": "gastown",
+    "repository": "gastownhall/gastown",
+    "revision": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+    "license_source": "https://raw.githubusercontent.com/gastownhall/gastown/649b832b7672bc7a2dbef26f5983aba6198b819b/LICENSE",
+    "retrieved": "2026-10-12",
+    "scope": "external-runtime",
+    "license_file": "third_party/licenses/gastown.txt",
+    "license_sha256_lf": "6141d15e761ef772bdd45fdd4036dfc1f97488011429e6643e1445afa9d22f4d"
+  },
+  {
+    "project": "deepseek-harness",
+    "repository": "deepseek-ai/deepseek-harness",
+    "revision": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+    "license": "MIT",
+    "license_source": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/d743267388641bc76f17c45ce8b4c231aed1d32c/LICENSE",
+    "license_file": "third_party/licenses/deepseek-harness-MIT.txt",
+    "retrieved": "2026-10-13",
+    "scope": "external-runtime-not-bundled",
+    "license_sha256_lf": "ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be"
+  },
+  {
+    "project": "rustdsh",
+    "repository": "jimoto-no-llm/rustdsh",
+    "revision": "a1be438e232278add3ee130e7d77aaa02f9f68c5",
+    "license": "MIT",
+    "license_source": "https://raw.githubusercontent.com/jimoto-no-llm/rustdsh/a1be438e232278add3ee130e7d77aaa02f9f68c5/LICENSE",
+    "license_file": "third_party/licenses/rustdsh-MIT.txt",
+    "retrieved": "2026-10-13",
+    "scope": "external-runtime-not-bundled",
+    "license_sha256_lf": "5a6125e3e75db3e7c728f5cb0506e5b02af6cfade560914e8e9915b49028a064"
+  },
+  {
+    "project": "dsh-tui",
+    "repository": "ccch1mneyyy/dsh-TUI",
+    "revision": "76c2a26b7f0d81e91b04c848e8aa9671f93ed046",
+    "license": "MIT",
+    "license_source": "https://raw.githubusercontent.com/ccch1mneyyy/dsh-TUI/76c2a26b7f0d81e91b04c848e8aa9671f93ed046/LICENSE",
+    "license_file": "third_party/licenses/dsh-tui-MIT.txt",
+    "retrieved": "2026-10-13",
+    "scope": "external-runtime-not-bundled",
+    "license_sha256_lf": "54f2c59427af6a22111dade86a39605a17826a7d44e98801c42e3ab21889f884"
+  },
+  {
+    "project": "beads",
+    "repository": "steveyegge/beads",
+    "revision": "6a3f515ced18406c189c55fff789a4925bfaa35c",
+    "license": "MIT",
+    "license_source": "https://raw.githubusercontent.com/steveyegge/beads/6a3f515ced18406c189c55fff789a4925bfaa35c/LICENSE",
+    "license_file": "third_party/licenses/beads-1.0.5-MIT.txt",
+    "retrieved": "2026-10-13",
+    "scope": "external-runtime-not-bundled",
+    "license_sha256_lf": "caa2c60efbbf71e18b45ef6006a18213f8a42554b235af88883f6f1ec240b7db"
+  },
+  {
+    "project": "dsh-std",
+    "repository": "T-Auto/dsh-std",
+    "revision": "614dfa1ac168db79fcf4577cf0ebb34e2e3b944b",
+    "license": "MIT",
+    "license_source": "https://raw.githubusercontent.com/T-Auto/dsh-std/614dfa1ac168db79fcf4577cf0ebb34e2e3b944b/LICENSE",
+    "license_file": "third_party/licenses/dsh-std-MIT.txt",
+    "retrieved": "2026-10-13",
+    "scope": "external-runtime-not-bundled",
+    "license_sha256_lf": "196f323817adf2e74a6b2134221d3ef3ed96c1c29a7453fcf199d83313cb98fc"
+  },
+  {
+    "project": "dolt",
+    "repository": "dolthub/dolt",
+    "ref": "v2.0.7",
+    "license": "Apache-2.0-with-separate-dependency-notices",
+    "license_source": "https://github.com/dolthub/dolt/releases/download/v2.0.7/dolt-linux-amd64.tar.gz",
+    "archive_sha256": "8e09138596763896cbce0632cd6e779fa1df405334c6c148bc314539a3b9795a",
+    "license_file": "third_party/licenses/dolt-2.0.7-LICENSES.txt",
+    "retrieved": "2026-10-13",
+    "scope": "external-runtime-not-bundled",
+    "license_sha256_lf": "b1dbbfef0d1d0b65b4eb225420e6365a362ef8ece076415c70fc6e355969b322"
+  }
+]

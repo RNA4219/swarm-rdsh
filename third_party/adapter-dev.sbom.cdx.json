@@ -1,0 +1,2472 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "bom-ref": "swarm-rdsh@0.2.1-dev.0",
+      "name": "swarm-rdsh",
+      "version": "0.2.1-dev.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "deepflow:scope",
+        "value": "adapter-development-dependencies-only"
+      },
+      {
+        "name": "deepflow:pnpm-lock-sha256-lf",
+        "value": "fcfc6ca1674832b64cf836fce8a6cdae45981239a9d039e35143a754ecf9cc90"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "@eslint-community/eslint-utils@4.10.1",
+      "name": "@eslint-community/eslint-utils",
+      "version": "4.10.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint-community/regexpp@4.12.2",
+      "name": "@eslint-community/regexpp",
+      "version": "4.12.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint/config-array@0.21.2",
+      "name": "@eslint/config-array",
+      "version": "0.21.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint/config-helpers@0.4.2",
+      "name": "@eslint/config-helpers",
+      "version": "0.4.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint/core@0.17.0",
+      "name": "@eslint/core",
+      "version": "0.17.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint/eslintrc@3.3.7",
+      "name": "@eslint/eslintrc",
+      "version": "3.3.7",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint/js@9.39.1",
+      "name": "@eslint/js",
+      "version": "9.39.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint/object-schema@2.1.7",
+      "name": "@eslint/object-schema",
+      "version": "2.1.7",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@eslint/plugin-kit@0.4.1",
+      "name": "@eslint/plugin-kit",
+      "version": "0.4.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@humanfs/core@0.19.2",
+      "name": "@humanfs/core",
+      "version": "0.19.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@humanfs/node@0.16.8",
+      "name": "@humanfs/node",
+      "version": "0.16.8",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@humanfs/types@0.15.0",
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@humanwhocodes/module-importer@1.0.1",
+      "name": "@humanwhocodes/module-importer",
+      "version": "1.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@humanwhocodes/retry@0.4.3",
+      "name": "@humanwhocodes/retry",
+      "version": "0.4.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@nodelib/fs.scandir@2.1.5",
+      "name": "@nodelib/fs.scandir",
+      "version": "2.1.5",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@nodelib/fs.stat@2.0.5",
+      "name": "@nodelib/fs.stat",
+      "version": "2.0.5",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@nodelib/fs.walk@1.2.8",
+      "name": "@nodelib/fs.walk",
+      "version": "1.2.8",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@types/estree@1.0.9",
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@types/json-schema@7.0.15",
+      "name": "@types/json-schema",
+      "version": "7.0.15",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@types/node@24.10.1",
+      "name": "@types/node",
+      "version": "24.10.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/eslint-plugin@8.46.3",
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/parser@8.46.3",
+      "name": "@typescript-eslint/parser",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/project-service@8.46.3",
+      "name": "@typescript-eslint/project-service",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/scope-manager@8.46.3",
+      "name": "@typescript-eslint/scope-manager",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/tsconfig-utils@8.46.3",
+      "name": "@typescript-eslint/tsconfig-utils",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/type-utils@8.46.3",
+      "name": "@typescript-eslint/type-utils",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/types@8.46.3",
+      "name": "@typescript-eslint/types",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/typescript-estree@8.46.3",
+      "name": "@typescript-eslint/typescript-estree",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/utils@8.46.3",
+      "name": "@typescript-eslint/utils",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "@typescript-eslint/visitor-keys@8.46.3",
+      "name": "@typescript-eslint/visitor-keys",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "acorn-jsx@5.3.2",
+      "name": "acorn-jsx",
+      "version": "5.3.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "acorn@8.19.0",
+      "name": "acorn",
+      "version": "8.19.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ajv@6.15.0",
+      "name": "ajv",
+      "version": "6.15.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ansi-styles@4.3.0",
+      "name": "ansi-styles",
+      "version": "4.3.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "argparse@2.0.1",
+      "name": "argparse",
+      "version": "2.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Python-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "balanced-match@1.0.2",
+      "name": "balanced-match",
+      "version": "1.0.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "brace-expansion@1.1.21",
+      "name": "brace-expansion",
+      "version": "1.1.21",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "brace-expansion@2.1.7",
+      "name": "brace-expansion",
+      "version": "2.1.7",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "braces@3.0.3",
+      "name": "braces",
+      "version": "3.0.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "callsites@3.1.0",
+      "name": "callsites",
+      "version": "3.1.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "chalk@4.1.2",
+      "name": "chalk",
+      "version": "4.1.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "color-convert@2.0.1",
+      "name": "color-convert",
+      "version": "2.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "color-name@1.1.4",
+      "name": "color-name",
+      "version": "1.1.4",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "concat-map@0.0.1",
+      "name": "concat-map",
+      "version": "0.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cross-spawn@7.0.6",
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "debug@4.4.3",
+      "name": "debug",
+      "version": "4.4.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "deep-is@0.1.4",
+      "name": "deep-is",
+      "version": "0.1.4",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "escape-string-regexp@4.0.0",
+      "name": "escape-string-regexp",
+      "version": "4.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "eslint-scope@8.4.0",
+      "name": "eslint-scope",
+      "version": "8.4.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "eslint-visitor-keys@3.4.3",
+      "name": "eslint-visitor-keys",
+      "version": "3.4.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "eslint-visitor-keys@4.2.1",
+      "name": "eslint-visitor-keys",
+      "version": "4.2.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "eslint@9.39.1",
+      "name": "eslint",
+      "version": "9.39.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "espree@10.4.0",
+      "name": "espree",
+      "version": "10.4.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "esquery@1.7.0",
+      "name": "esquery",
+      "version": "1.7.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "esrecurse@4.3.0",
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "estraverse@5.3.0",
+      "name": "estraverse",
+      "version": "5.3.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "esutils@2.0.3",
+      "name": "esutils",
+      "version": "2.0.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fast-deep-equal@3.1.3",
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fast-glob@3.3.3",
+      "name": "fast-glob",
+      "version": "3.3.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fast-json-stable-stringify@2.1.0",
+      "name": "fast-json-stable-stringify",
+      "version": "2.1.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fast-levenshtein@2.0.6",
+      "name": "fast-levenshtein",
+      "version": "2.0.6",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastq@1.20.3",
+      "name": "fastq",
+      "version": "1.20.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "file-entry-cache@8.0.0",
+      "name": "file-entry-cache",
+      "version": "8.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fill-range@7.1.1",
+      "name": "fill-range",
+      "version": "7.1.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "find-up@5.0.0",
+      "name": "find-up",
+      "version": "5.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "flat-cache@4.0.1",
+      "name": "flat-cache",
+      "version": "4.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "flatted@3.4.4",
+      "name": "flatted",
+      "version": "3.4.4",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "glob-parent@5.1.2",
+      "name": "glob-parent",
+      "version": "5.1.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "glob-parent@6.0.2",
+      "name": "glob-parent",
+      "version": "6.0.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "globals@14.0.0",
+      "name": "globals",
+      "version": "14.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "graphemer@1.4.0",
+      "name": "graphemer",
+      "version": "1.4.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "has-flag@4.0.0",
+      "name": "has-flag",
+      "version": "4.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ignore@5.3.2",
+      "name": "ignore",
+      "version": "5.3.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ignore@7.0.12",
+      "name": "ignore",
+      "version": "7.0.12",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "import-fresh@3.3.1",
+      "name": "import-fresh",
+      "version": "3.3.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "imurmurhash@0.1.4",
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "is-extglob@2.1.1",
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "is-glob@4.0.3",
+      "name": "is-glob",
+      "version": "4.0.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "is-number@7.0.0",
+      "name": "is-number",
+      "version": "7.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "isexe@2.0.0",
+      "name": "isexe",
+      "version": "2.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "js-yaml@4.3.2",
+      "name": "js-yaml",
+      "version": "4.3.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "json-buffer@3.0.1",
+      "name": "json-buffer",
+      "version": "3.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "json-schema-traverse@0.4.1",
+      "name": "json-schema-traverse",
+      "version": "0.4.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "json-stable-stringify-without-jsonify@1.0.1",
+      "name": "json-stable-stringify-without-jsonify",
+      "version": "1.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "keyv@4.5.4",
+      "name": "keyv",
+      "version": "4.5.4",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "levn@0.4.1",
+      "name": "levn",
+      "version": "0.4.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "locate-path@6.0.0",
+      "name": "locate-path",
+      "version": "6.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "lodash.merge@4.6.2",
+      "name": "lodash.merge",
+      "version": "4.6.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "merge2@1.4.1",
+      "name": "merge2",
+      "version": "1.4.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "micromatch@4.0.8",
+      "name": "micromatch",
+      "version": "4.0.8",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "minimatch@3.1.5",
+      "name": "minimatch",
+      "version": "3.1.5",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "minimatch@9.0.9",
+      "name": "minimatch",
+      "version": "9.0.9",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ms@2.1.3",
+      "name": "ms",
+      "version": "2.1.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "natural-compare@1.4.0",
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "optionator@0.9.4",
+      "name": "optionator",
+      "version": "0.9.4",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "p-limit@3.1.0",
+      "name": "p-limit",
+      "version": "3.1.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "p-locate@5.0.0",
+      "name": "p-locate",
+      "version": "5.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "parent-module@1.0.1",
+      "name": "parent-module",
+      "version": "1.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "path-exists@4.0.0",
+      "name": "path-exists",
+      "version": "4.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "path-key@3.1.1",
+      "name": "path-key",
+      "version": "3.1.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "picomatch@2.3.2",
+      "name": "picomatch",
+      "version": "2.3.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "prelude-ls@1.2.1",
+      "name": "prelude-ls",
+      "version": "1.2.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "punycode@2.3.1",
+      "name": "punycode",
+      "version": "2.3.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "queue-microtask@1.2.3",
+      "name": "queue-microtask",
+      "version": "1.2.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "resolve-from@4.0.0",
+      "name": "resolve-from",
+      "version": "4.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "reusify@1.1.0",
+      "name": "reusify",
+      "version": "1.1.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "run-parallel@1.2.0",
+      "name": "run-parallel",
+      "version": "1.2.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "semver@7.8.5",
+      "name": "semver",
+      "version": "7.8.5",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "shebang-command@2.0.0",
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "shebang-regex@3.0.0",
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "strip-json-comments@3.1.1",
+      "name": "strip-json-comments",
+      "version": "3.1.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "supports-color@7.2.0",
+      "name": "supports-color",
+      "version": "7.2.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "to-regex-range@5.0.1",
+      "name": "to-regex-range",
+      "version": "5.0.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ts-api-utils@2.5.0",
+      "name": "ts-api-utils",
+      "version": "2.5.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "type-check@0.4.0",
+      "name": "type-check",
+      "version": "0.4.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "typescript-eslint@8.46.3",
+      "name": "typescript-eslint",
+      "version": "8.46.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "typescript@5.9.3",
+      "name": "typescript",
+      "version": "5.9.3",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "undici-types@7.16.0",
+      "name": "undici-types",
+      "version": "7.16.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uri-js@4.4.1",
+      "name": "uri-js",
+      "version": "4.4.1",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "which@2.0.2",
+      "name": "which",
+      "version": "2.0.2",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "word-wrap@1.2.5",
+      "name": "word-wrap",
+      "version": "1.2.5",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "yocto-queue@0.1.0",
+      "name": "yocto-queue",
+      "version": "0.1.0",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "deepflow:usage",
+          "value": "build-and-test-only-not-bundled-in-npm-artifact"
+        }
+      ]
+    }
+  ]
+}

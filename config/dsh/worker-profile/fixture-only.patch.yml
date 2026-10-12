@@ -1,0 +1,10 @@
+# 公開fixture専用の接続試験overlay。通常profileには含めない。
+# 外側のbubblewrapがhost homeと実repoを隠し、書込みを試験townに限定する。
+# gt/bd/gitはworktree外のGas Town状態へ書くため、この試験内ではDSHの追加承認を外す。
+- id: sandbox-policy
+  config:
+    mode: danger-full-access
+    workspaceRoot: !!js process.cwd()
+- id: approval
+  config:
+    policy: never
