@@ -1,0 +1,6 @@
+# 添付原本と上流LICENSEはbyte単位で保存する。原本のMarkdown改行等は変更しない。
+docs/design-v2.1/** -text -whitespace
+third_party/licenses/** -text -whitespace
+# Windows checkoutでもWSL用scriptの改行を固定する。
+*.sh text eol=lf
+adapters/gt-dsh/bin/*.mjs text eol=lf

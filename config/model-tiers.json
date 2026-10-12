@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "provider": "deepinfra",
+  "endpoint": "https://api.deepinfra.com/v1/openai",
+  "api_key_env": "DEEPINFRA_API_KEY",
+  "tiers": {
+    "head": { "id": "zai-org/GLM-5.3", "purpose": "役割の指揮・難しい判断" },
+    "medium": { "id": "zai-org/GLM-5.3-Flash", "purpose": "実装・検証worker" },
+    "lower": { "id": "deepseek-ai/DeepSeek-V4.1-Flash", "purpose": "軽い調査・整理worker" }
+  },
+  "selection": "Gas Townのagent preset/configで固定。自動fallbackや第二のschedulerは追加しない。"
+}

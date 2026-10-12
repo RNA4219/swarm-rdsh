@@ -1,0 +1,6 @@
+{
+  "name": "deepflow-worker-v2_1",
+  "private": true,
+  "type": "module",
+  "dsh": { "profile": { "bundles": ["@deepseek-ai/dsh-base", "@deepseek-harness-tui/dsh-tui"] } }
+}

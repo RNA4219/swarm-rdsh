@@ -1,0 +1,37 @@
+{
+  "name": "swarm-rdsh",
+  "version": "0.2.1-dev.0",
+  "private": true,
+  "type": "module",
+  "description": "Gas Townから固定したDSH/rustdshへ起動を委譲する接続アダプター",
+  "repository": { "type": "git", "url": "git+https://github.com/RNA4219/swarm-rdsh.git" },
+  "homepage": "https://github.com/RNA4219/swarm-rdsh#readme",
+  "bugs": { "url": "https://github.com/RNA4219/swarm-rdsh/issues" },
+  "license": "MIT",
+  "engines": { "node": ">=24.15.0 <25" },
+  "packageManager": "pnpm@10.20.0",
+  "bin": { "gt-dsh": "adapters/gt-dsh/bin/gt-dsh.mjs" },
+  "files": ["adapters", "lib/gt-dsh", "config/gastown", "config/dsh", "config/gt-dsh.example.json", "config/deepinfra.env.example", "config/model-tiers.json", "docs/design-v2.1", "docs/IMPLEMENTATION_STATUS.md", "docs/REAL_E2E.md", "docs/MIGRATION.md", "docs/RELEASE.md", "docs/evidence", "upstream.lock", "LICENSE", "THIRD_PARTY_NOTICES.md", "ACKNOWLEDGEMENTS.md", "SECURITY.md", "CHANGELOG.md", "third_party/licenses", "third_party/upstream-sources.json", "third_party/adapter-dev.sbom.cdx.json"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint adapters/gt-dsh/src tools tests/adapter-contract tests/lifecycle tests/integration eslint.config.mjs",
+    "build": "tsc",
+    "test:contract": "node --test tests/adapter-contract/*.test.mjs",
+    "test:lifecycle": "node --test tests/lifecycle/*.test.mjs",
+    "test:integration": "node --test tests/integration/*.test.mjs",
+    "test": "node --test tests/adapter-contract/*.test.mjs tests/lifecycle/*.test.mjs tests/integration/*.test.mjs",
+    "doctor": "node adapters/gt-dsh/bin/gt-dsh.mjs --doctor",
+    "check:design": "node tools/check-design.mjs",
+    "check:package": "node tools/check-package.mjs",
+    "check:secrets": "node tools/check-secrets.mjs",
+    "generate:sbom": "node tools/generate-dev-sbom.mjs",
+    "check:release": "node tools/check-release.mjs",
+    "prepack": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "eslint": "9.39.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.3"
+  }
+}
