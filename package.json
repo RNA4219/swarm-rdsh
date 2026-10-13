@@ -11,7 +11,7 @@
   "engines": { "node": ">=24.15.0 <25" },
   "packageManager": "pnpm@10.20.0",
   "bin": { "gt-dsh": "adapters/gt-dsh/bin/gt-dsh.mjs" },
-  "files": ["adapters", "lib/gt-dsh", "config/gastown", "config/dsh", "config/gt-dsh.example.json", "config/deepinfra.env.example", "config/model-tiers.json", "docs/design-v2.1", "docs/IMPLEMENTATION_STATUS.md", "docs/REAL_E2E.md", "docs/MIGRATION.md", "docs/RELEASE.md", "docs/evidence", "upstream.lock", "LICENSE", "THIRD_PARTY_NOTICES.md", "ACKNOWLEDGEMENTS.md", "SECURITY.md", "CHANGELOG.md", "third_party/licenses", "third_party/upstream-sources.json", "third_party/adapter-dev.sbom.cdx.json"],
+  "files": ["adapters", "lib/gt-dsh", "config/gastown", "config/dsh", "config/gt-dsh.example.json", "config/deepinfra.env.example", "config/model-tiers.json", "docs/design-v2.1", "docs/IMPLEMENTATION_STATUS.md", "docs/REAL_E2E.md", "docs/MIGRATION.md", "docs/RELEASE.md", "docs/PRODUCTION_QUALIFICATION.md", "docs/UNCOMMITTED_REVIEW.md", "docs/evidence", "upstream.lock", "LICENSE", "THIRD_PARTY_NOTICES.md", "ACKNOWLEDGEMENTS.md", "SECURITY.md", "CHANGELOG.md", "third_party/licenses", "third_party/upstream-sources.json", "third_party/adapter-dev.sbom.cdx.json"],
   "scripts": {
     "typecheck": "tsc --noEmit",
     "lint": "eslint adapters/gt-dsh/src tools tests/adapter-contract tests/lifecycle tests/integration eslint.config.mjs",

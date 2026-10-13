@@ -1,6 +1,6 @@
 import { spawn, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, readFileSync, realpathSync, statSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, realpathSync, statSync } from 'node:fs';
 import { isAbsolute, join, relative, resolve, sep } from 'node:path';
 
 export const PROFILE = 'deepflow-worker-v2_1';
@@ -155,7 +155,8 @@ export function prepareFixtureLaunch(configPath: string, cwd: string, inherited 
   const boundary = object(lock.execution_boundary, 'fixture-boundary-missing');
   const root = existingDirectory(boundary.fixture_root, 'fixture-root-missing');
   const marker = join(root, 'PUBLIC_FIXTURE.json');
-  if (boundary.marker_sha256 !== sha256(marker) || readJson(marker).scope !== 'synthetic-public-fixture') throw new ContractError('fixture-marker-mismatch');
+  const markerData = readJson(marker);
+  if (boundary.marker_sha256 !== sha256(marker) || markerData.scope !== 'synthetic-public-fixture') throw new ContractError('fixture-marker-mismatch');
   const workspace = validateWorkspace(cwd);
   const common = spawnSync('git', ['rev-parse', '--path-format=absolute', '--git-common-dir'], { cwd: workspace, encoding: 'utf8', timeout: 5000 });
   if (!inside(root, workspace) || common.status !== 0 || !inside(root, realpathSync(common.stdout.trim()))
@@ -163,12 +164,36 @@ export function prepareFixtureLaunch(configPath: string, cwd: string, inherited 
     || inherited.GT_RIG !== 'fixture' || !/^(fixture\/polecats\/[^/]+|fixture\/refinery)$/.test(inherited.GT_ROLE ?? '')) throw new ContractError('outside-public-fixture');
   const qualification = object(lock.qualification, 'qualification-missing');
   if (qualification.build !== 'passed' || !['static-verified', 'passed-public-fixture', 'passed'].includes(String(qualification.profile_composition))) throw new ContractError('fixture-not-built');
+  validateIdentity(inherited);
+  let fixtureHome = config.home;
+  if (boundary.worker_home_mode !== undefined) {
+    if (boundary.worker_home_mode !== 'per-polecat' || markerData.purpose !== 'staged-load-qualification') {
+      throw new ContractError('fixture-worker-home-mode-invalid');
+    }
+    const role = /^(fixture\/polecats\/([A-Za-z0-9][A-Za-z0-9_-]{0,63}))$/.exec(inherited.GT_ROLE ?? '');
+    if (!role) throw new ContractError('fixture-worker-home-role-invalid');
+    const polecat = role[2];
+    if (!polecat) throw new ContractError('fixture-worker-home-role-invalid');
+    const homeRoot = existingDirectory(boundary.worker_home_root, 'fixture-worker-home-root-missing');
+    if (!inside(root, homeRoot)) throw new ContractError('fixture-worker-home-outside-root');
+    const requestedHome = resolve(homeRoot, polecat);
+    if (!inside(homeRoot, requestedHome)) throw new ContractError('fixture-worker-home-outside-root');
+    mkdirSync(requestedHome, { recursive: true, mode: 0o700 });
+    fixtureHome = realpathSync(requestedHome);
+    if (!inside(homeRoot, fixtureHome)) throw new ContractError('fixture-worker-home-outside-root');
+    for (const name of ['.env', '.credentials.yaml']) {
+      if (existsSync(join(fixtureHome, name))) throw new ContractError('ambient-credentials-not-allowed');
+    }
+    if (existsSync(join(fixtureHome, '.dsh-tui'))) throw new ContractError('saved-tui-state-not-allowed');
+  }
   const args = ['--profile', PROFILE, '--patch', join(config.dshHome, 'fixture-only.patch.yml')];
   if (inherited.GT_ROLE === 'fixture/refinery') {
     if (!object(lock.profile_files, 'profile-files-missing')['refinery-only.patch.yml']) throw new ContractError('refinery-fixture-profile-missing');
     args.push('--patch', join(config.dshHome, 'refinery-only.patch.yml'));
   }
-  return { command: config.rdsh, args, cwd: workspace, env: buildEnvironment(config, inherited) };
+  const env = buildEnvironment(config, inherited);
+  env.HOME = fixtureHome;
+  return { command: config.rdsh, args, cwd: workspace, env };
 }
 export function buildEnvironment(config: WorkerConfig, inherited: NodeJS.ProcessEnv): NodeJS.ProcessEnv {
   validateIdentity(inherited);

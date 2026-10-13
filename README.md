@@ -56,6 +56,8 @@ worker profileはDeepInfraへの固定経路、worker用tool、委譲・認証�
 - 実モデル1ジョブ: [実E2E記録](docs/REAL_E2E.md)
 - 起動lock契約: [アダプター仕様](adapters/gt-dsh/README.md)
 - 新規リポジトリの範囲: [構成の分離](docs/MIGRATION.md)
+- 本番資格の不足: [資格記録の読み取り専用診断](docs/PRODUCTION_QUALIFICATION.md)
+- 未コミット変更の評価: [レビュー記録](docs/UNCOMMITTED_REVIEW.md)
 
 本リポジトリの実行入口はgt-dshです。アダプター、設定、契約試験、公開用検証記録を収録しています。固定runtimeのビルド・実E2E用スクリプトは[tools](tools/)にあります。現在は検証時のローカル保存先を参照するため、通常運用向けの可搬インストーラーとしては未完成です。
 
