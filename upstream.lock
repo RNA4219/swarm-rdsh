@@ -135,9 +135,10 @@
     "nudge_terminal": "failed",
     "automatic_recovery": "not-run",
     "refinery_merge": "passed-public-fixture-standard-agent-and-mq",
-    "load_16": "not-run",
+    "load_16": "passed-infrastructure-smoke",
     "load_100": "not-run",
-    "tui_injection": "passed-public-fixture-short-sandbox-home"
+    "tui_injection": "passed-public-fixture-short-sandbox-home",
+    "load_32": "passed-infrastructure-smoke"
   },
   "review_workspace": {
     "uncommitted_file_count_reported": 8,
@@ -249,7 +250,8 @@
         "lib/gt-dsh/adapter.js": "f06f79c3954bb6fc3e898d470a0955de87f778c11c42cb2ddbb8304b78887460",
         "lib/gt-dsh/cli.js": "c18a8234e06566a5218d45050276ac4a031d54b0f442147dfaf3989533cec81e",
         "adapters/gt-dsh/bin/gt-dsh.mjs": "e0bd5039e18b5c6920dfec7ad56d5c4f7e2ab7b5a493276a5f8318b069adc3ed"
-      }
+      },
+      "evidence_scope": "historical-public-fixture-before-current-changes"
     },
     "public_fixture_profile": {
       "name": "deepflow-worker-v2_1",
@@ -344,5 +346,19 @@
   "public_qualification_evidence": {
     "path": "docs/evidence/qualification-20261013.json",
     "sha256": "53a0d3179553872395c006eb11087efd8383c6ba9edd0a93e46c778b60c7251c"
+  },
+  "public_load_qualification": {
+    "scope": "synthetic-infrastructure-smoke",
+    "target_traffic": false,
+    "recorded_nodes": 32,
+    "stages_recorded": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "production_qualified": false,
+    "evidence": "docs/evidence/load-infrastructure-20261013.json",
+    "evidence_sha256": "e6f2e3cdddcf00d5604a656af2472ffabffe947fe2feb6a3bd6b6a2aaf1e667f"
   }
 }

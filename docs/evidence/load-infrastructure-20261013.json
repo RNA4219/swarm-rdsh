@@ -1,0 +1,53 @@
+{
+  "schema": "swarm-rdsh-load-evidence-review/v1",
+  "scope": "synthetic-infrastructure-smoke",
+  "targetTraffic": false,
+  "sourceRecordSha256": "76ed4b959537b016e19b40d137235e5dd2ec0a02d8541c221ecd088311c73525",
+  "stages": [
+    {
+      "nodes": 4,
+      "originallyRecordedResult": "passed",
+      "maxPolecats": 4,
+      "maxTmuxPanes": 4,
+      "maxSubstantiveSessions": 4,
+      "tasksClosed": 4,
+      "swapPeakKiB": 0,
+      "summarySha256": "9904a8b8d9e11f73a68002fcce37d6c039a89c9915f8fc242120046bae3ba309"
+    },
+    {
+      "nodes": 8,
+      "originallyRecordedResult": "passed",
+      "maxPolecats": 8,
+      "maxTmuxPanes": 8,
+      "maxSubstantiveSessions": 8,
+      "tasksClosed": 8,
+      "swapPeakKiB": 0,
+      "summarySha256": "c36b104452bf4eef4aa93ef779da5516bf7cfd4d97b08b70e9c7431326ec6181"
+    },
+    {
+      "nodes": 16,
+      "originallyRecordedResult": "passed",
+      "maxPolecats": 16,
+      "maxTmuxPanes": 16,
+      "maxSubstantiveSessions": 16,
+      "tasksClosed": 16,
+      "swapPeakKiB": 0,
+      "summarySha256": "eb5551e269c896c69436e4c13360b5ab51b8450a7e18fd7f452f69089aa689a7"
+    },
+    {
+      "nodes": 32,
+      "originallyRecordedResult": "passed",
+      "maxPolecats": 32,
+      "maxTmuxPanes": 32,
+      "maxSubstantiveSessions": 32,
+      "tasksClosed": 32,
+      "swapPeakKiB": 0,
+      "summarySha256": "7036384ce63d2661f11ec9f7343ae3191301fde526678c6d06525935b42ec544"
+    }
+  ],
+  "modelCallsIndependentlyVerified": false,
+  "simultaneousModelInflightVerified": false,
+  "artifactAcceptanceVerified": false,
+  "productionQualified": false,
+  "rerunAfterHarnessFix": false
+}
